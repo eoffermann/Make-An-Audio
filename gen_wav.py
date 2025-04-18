@@ -58,7 +58,7 @@ def parse_args():
 def initialize_model(config, ckpt,device=device):
     config = OmegaConf.load(config)
     model = instantiate_from_config(config.model)
-    model.load_state_dict(torch.load(ckpt,map_location='cpu')["state_dict"], strict=False)
+    model.load_state_dict(torch.load(ckpt,map_location='cpu',weights_only=False)["state_dict"], strict=False, )
 
     model = model.to(device)
     model.cond_stage_model.to(model.device)
