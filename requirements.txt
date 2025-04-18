@@ -1,10 +1,18 @@
---extra-index-url https://download.pytorch.org/whl/cu113
-torch
+# ──────────────────────────────────────────────────────────────
+# PyTorch + CUDA 12.4 wheels
+# ──────────────────────────────────────────────────────────────
+--extra-index-url https://download.pytorch.org/whl/cu124
+
+torch==2.6.0+cu124         # core GPU build
+torchvision==0.21.0+cu124    # GPU build aligned with torch 2.6.0
+torchaudio==2.6.0+cu124     # GPU build aligned with torch 2.6.0
+
+# ──────────────────────────────────────────────────────────────
+# Remaining dependencies (CPU-agnostic or CUDA handled via PyTorch)
+# ──────────────────────────────────────────────────────────────
 torch-fidelity==0.3.0
 scipy
 importlib_resources
-torchaudio>=0.13.0
-torchvision>=0.14.0
 tqdm
 omegaconf
 einops
@@ -15,6 +23,8 @@ pandas
 torchlibrosa
 transformers==4.18.0
 ftfy
-pytorch-lightning==1.7.0
+pytorch-lightning==2.5.1
 torchmetrics==0.11.1
+
+# CompVis taming-transformers (editable install)
 -e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers

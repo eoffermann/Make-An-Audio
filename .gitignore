@@ -3,6 +3,7 @@
 useful_ckpts/bigvgan
 useful_ckpts/*.ckpt
 useful_ckpts/CLAP/*.ckpt
+useful_ckpts/CLAP/*.pth
 evaluation
 .idea/
 logs

@@ -1,0 +1,28 @@
+# ──────────────────────────────────────────────────────────────
+# PyTorch
+# ──────────────────────────────────────────────────────────────
+torch==2.6.0            # core CPU build
+torchvision==0.21.0     # CPU build aligned with torch 2.6.0
+torchaudio==2.6.0       # CPU build aligned with torch 2.6.0
+
+# ──────────────────────────────────────────────────────────────
+# Remaining dependencies (CPU-agnostic or CUDA handled via PyTorch)
+# ──────────────────────────────────────────────────────────────
+torch-fidelity==0.3.0
+scipy
+importlib_resources
+tqdm
+omegaconf
+einops
+numpy<=1.23.5
+soundfile
+librosa==0.9.2
+pandas
+torchlibrosa
+transformers==4.18.0
+ftfy
+pytorch-lightning==2.5.1
+torchmetrics==0.11.1
+
+# CompVis taming-transformers (editable install)
+-e git+https://github.com/CompVis/taming-transformers.git@master#egg=taming-transformers
