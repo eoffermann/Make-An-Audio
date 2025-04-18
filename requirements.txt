@@ -4,8 +4,8 @@
 --extra-index-url https://download.pytorch.org/whl/cu124
 
 torch==2.6.0+cu124         # core GPU build
-torchvision==0.21.0+cu124    # GPU build aligned with torch 1.13.1
-torchaudio==2.6.0+cu124     # GPU build aligned with torch 1.13.1
+torchvision==0.21.0+cu124    # GPU build aligned with torch 2.6.0
+torchaudio==2.6.0+cu124     # GPU build aligned with torch 2.6.0
 
 # ──────────────────────────────────────────────────────────────
 # Remaining dependencies (CPU-agnostic or CUDA handled via PyTorch)
